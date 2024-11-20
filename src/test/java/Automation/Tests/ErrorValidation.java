@@ -14,7 +14,7 @@ public class ErrorValidation extends BaseTests {
 	@Test(groups= {"ErrorHandeling"}, retryAnalyzer=Retry.class)
 	public void loginErrorValidation() {
 		landingPage.loginToApplication("mj240@gmail.com","17BmD");
-		Assert.assertEquals("Incorrect email or pass.",landingPage.getLoginErrorMessage());
+		Assert.assertEquals("Incorrect email or password.",landingPage.getLoginErrorMessage());
 	}
 	
 	@Test
